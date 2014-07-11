@@ -1,0 +1,81 @@
+/******************************************************************
+Theme Name: Warden
+Theme URI: http://www.themble.com/bones
+Description: This site was built using the <a href="https://github.com/bostonwp/bones-less" title="Bones-LESS">Bones-LESS</a> variant of the Bones Development Theme. For more information about Bones or to view documentation, you can visit the <a href="https://github.com/eddiemachado/bones/issues" title="Bones Issues">Bones Issues</a> page on Github. You'll want to customize this for your clients with your own information.
+Author: Brandon Giella
+Author URI: http://www.wardenmag.com
+Version: 1.0
+Tags: flexble-width, translation-ready, microformats, rtl-language-support
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+Are You Serious? Yes.
+
+
+MAKE SURE TO READ BELOW BEFORE GETTING STARTED FOR THE FIRST TIME!
+------------------------------------------------------------------
+
+You may be thinking…
+
+WHOA, WHOA, WHOA…WHAT HAPPENED HERE?
+
+But before you freak out, let me take a few minutes to explain.
+
+This fork of Bones uses LESS (http://lesscss.org/) by default. If
+you prefer using regular CSS, then feel free to grab the normal Bones
+theme from http://themble.com/bones/ and modify it however you like.
+
+DON'T DISMISS IT YET THOUGH, USING LESS ISN'T AS COMPLICATED AS YOU THINK.
+
+It does take a few minutes to wrap your head around, but it will all
+be worth it. Need a quick intro? Here are a few quick reads:
+
+http://cognition.happycog.com/article/preprocess-this
+http://coding.smashingmagazine.com/2011/09/09/an-introduction-to-less-and-comparison-to-sass/
+
+Because this version of Bones uses the excellent wp-sass library,
+working with Sass files is easier than ever before! Just edit the SCSS-
+format stylesheets in library/scss, re-load the site, and your changes
+should appear right away--just like you're used to with CSS.
+
+The strength of most programs made for working with LESS is that they
+compile your .less files into valid, ordinary CSS. Since this theme
+automatically does the compilation for you, you don't technically need
+the apps below to work with Bones. They're still pretty awesome,
+though, so try them out and see what you think:
+
+CodeKit: (Highly Recommended)
+http://incident57.com/codekit/
+
+LESS App:
+http://incident57.com/less/
+
+SimpLESS: (Windows Users)
+http://wearekiss.com/simpless
+
+WinLESS: (Windows Users)
+http://winless.org/
+
+A QUICK NOTE ABOUT THE LOGIN SCREEN STYLES
+
+The *one* file that doesn't get auto-generated is the login screen
+stylesheet, library/less/login.less. To make changes to the login
+styles, simply use one of the apps above to edit login.scss, set
+the output to the library/css folder and you are all set. It's a
+thing of beauty.
+
+---------------------------------------------------------------
+
+Remember, once you download Bones it's up to you how to use it,
+so go nuts. Set things up and develop in a way that's easiest for
+you.
+
+If you're frustrated with this new direction and don't like change,
+take a few minutes and think about how much better a developer you
+can become by just TRYING out new technologies. It may be tough at
+first but it WILL make you a better developer. TRUST ME ON THIS.
+Give it a week, maybe two, and you will never go back.
+
+Happy Developing!
+
+******************************************************************/

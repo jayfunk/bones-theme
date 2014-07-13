@@ -191,16 +191,23 @@ h5, .h5 {
 .header {
 	#inner-header {}
 
-	#logo {}
+	#logo {
+		float: left;
+	}
 
 	nav {
-		ul.nav {
-			li {
-				a {}
+		float: right;
+		div.nav.top-nav {
+			ul {
 
-				&:first-child {}
+				li {
+					display: inline-block;
+					a {}
 
-				&:last-child {}
+					&:first-child {}
+
+					&:last-child {}
+				}
 			}
 		}
 	}
@@ -219,17 +226,41 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
-	border-bottom: 0;
-
+	li:nth-child(1) a{
+			border-bottom-color: rgb(177, 62, 51);	
+	}
+	li:nth-child(2) a{
+				border-bottom-color: rgb(23, 158, 171);
+	}
+	li:nth-child(3) a{
+				border-bottom-color: rgb(227, 204, 51);
+	}
+	li:nth-child(4) a{
+				border-bottom-color: rgb(107, 174, 53);
+	}
+	li:nth-child(5) a{
+				border-bottom-color: rgb(231, 149, 50);
+	}
+	li:nth-child(6) a{
+				border-bottom-color: rgb(112, 59, 143);
+	}
+	li:nth-child(7) a{
+				border-bottom-color: rgb(107, 126, 128);	
+	}
 	li {
-
 		a {
+			border-bottom-width: 2px;
+			border-bottom-style: solid;
+			:visited{
+				color: rgb(92, 95, 115);
+			}
+			
 			display: block;
 			text-decoration: none;
-			padding: 10px 10px;
-			background-color: #eee;
-			border-bottom: 1px solid #ccc;
+			color: rgb(92, 95, 115);
+			
+			padding: 0px 2px;
+			margin: 2px 5px;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -296,7 +327,7 @@ and more scalable.
 
 #content {
 	margin-top: 2.2em;
-
+	clear:both;
 	#inner-content {}
 }
 

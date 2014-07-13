@@ -9,6 +9,10 @@ slow the page load.
 
 */
 
+function setBackgroundImageFromThumbnail(selectorToSet, imageSource){
+    var backGroundImage = imageSource.replace('-150x150', '');
+    selectorToSet.css('background-image', 'url(' + backGroundImage + ')');
+}
 // IE8 ployfill for GetComputed Style (for Responsive Script below)
 if (!window.getComputedStyle) {
     window.getComputedStyle = function(el, pseudo) {
@@ -65,8 +69,14 @@ jQuery(document).ready(function($) {
         
     }
     
+    var thumbnailImage = $('.article-headers li:first img').attr('src');
+    setBackgroundImageFromThumbnail($('body'), thumbnailImage);
+
 	
-	// add all your scripts here
+	$('.article-headers li').mouseenter(function(){
+        var thumbnailImage = $(this).children('img').attr('src');
+        setBackgroundImageFromThumbnail($('body'), thumbnailImage);
+     });
 	
  
 }); /* end of as page load scripts */

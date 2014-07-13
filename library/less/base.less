@@ -35,10 +35,16 @@ and will be used across all viewports.
 *********************/
 
 body {
-	font-family: @serif;
+	font-family: @font-family-sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
 	color: #565656;
+	margin: 0;
+	padding: 0;
+
+	ul{
+		list-style: none;
+	}
 }
 
 /********************
@@ -47,7 +53,20 @@ body {
 ********************/
 
 .rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
+.home {
+
+	ul.article-headers li{
+		 .post-thumbnail{
+		 	margin-bottom: -45px;
+		 	width: 150px;
+		 	height: 120px;
+		 }
+		 h1{
+		 	display: inline-block;
+		 }
+	}
+
+}                          /* home page */
 .blog {}                          /* blog template page */
 .archive {}                       /* archive page */
 .date {}                          /* date archive page */
@@ -100,7 +119,7 @@ a, a:visited {
 
 	/* on hover */
 	&:hover, &:focus {
-		color: @link-hover;
+		color: @link-hover-color;
 	}
 
 	/* on click */
@@ -124,7 +143,7 @@ a, a:visited {
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: @sans-serif;
+	font-family: @font-family-sans-serif;
 	text-rendering: optimizelegibility;
 	font-weight: 400;
 	/*
